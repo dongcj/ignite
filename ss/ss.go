@@ -52,7 +52,7 @@ func CreateContainer(serverType, name, method, password string, port int) (*mode
 		Name: name,
 		Config: &docker.Config{
 			Image: image,
-			Cmd:   []string{"-k", password, "-m", method},
+			Cmd:   []string{"-k", password, "-m", method, "--plugin", "obfs-server", "--plugin-opts", "obfs=http"},
 		},
 		HostConfig: &docker.HostConfig{
 			PortBindings: map[docker.Port][]docker.PortBinding{
