@@ -15,8 +15,8 @@ import (
 )
 
 const (
-	SS_IMAGE  = "goignite/ss-libev:latest"
-	SSR_IMAGE = "goignite/ssr:latest"
+	SS_IMAGE  = "dongcj/ss-libev:latest"
+	SSR_IMAGE = "dongcj/ssr:latest"
 )
 
 var (
